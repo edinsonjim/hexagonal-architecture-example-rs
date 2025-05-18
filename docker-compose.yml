@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    image: "mysql:8.0"
+    volumes:
+      - "./.docker/db/data:/var/lib/mysql"
+    ports:
+      - "9306:3306"
+    networks:
+      - portalrsnet
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: portal_db
+
+networks:
+  portalrsnet:

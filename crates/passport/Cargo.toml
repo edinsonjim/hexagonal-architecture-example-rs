@@ -1,0 +1,19 @@
+[package]
+name = "passport"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = { workspace = true }
+tracing = { workspace = true }
+serde = { workspace = true }
+lumx_core = { workspace = true }
+lumx_axum = { workspace = true }
+lumx_sea_orm = { workspace = true }
+passport_jwt = { workspace = true }
+passport_core = { workspace = true }
+passport_auth = { workspace = true }
+ids_std_rest_api = { workspace = true }
+jsonwebtoken = { workspace = true }
+lazy_static = { workspace = true }
+portal_schema = { workspace = true }
